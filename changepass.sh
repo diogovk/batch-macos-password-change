@@ -96,7 +96,7 @@ done
 echo "########################################################"
 for host in $HOST_LIST
 do
-    if test_password  $NEW_PASSWORD admin@$host >/dev/null 2>&1 ; then
+    if test_password  $NEW_PASSWORD admin:@$host >/dev/null 2>&1 ; then
         echo "admin@$host: Success!"
     else
         echo "admin@$host: Failed!"
